@@ -1,0 +1,117 @@
+/* Login Card Styles */
+.loginCard {
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+    gap: var(--gap-large);
+    transition: all 0.3s ease;
+}
+
+/* Segmented Button Container */
+.loginSignupSegmented {
+    background: var(--background-primary);
+    border: 8px solid var(--background-secondary); 
+    border-radius: 32px;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    transition: all 0.3s ease;
+}
+
+/* Segmented Buttons */
+.segmentedBtn {
+    padding: 0.6em 1.2em;
+    background: #00000000;
+    border: none;
+    border-radius: var(--border-radius-xl);
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: 0.15s;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.segmentedBtn:hover {
+    background: var(--accent-green-dark);
+    border: none;
+    color: white;
+    transition: 0.25s;
+}
+
+/* Active Button */
+.segmentedBtn.active {
+    background: var(--accent-green); /* Green background for active */
+    color: white; 
+    font-weight: bold;
+    border-radius: var(--border-radius-xl);
+    transition: 0.25s;
+}
+
+/* Login Form Styles */
+.loginForm {
+    padding: var(--padding-large);
+    background: white;
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    transition: all 0.3s ease;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    font-weight: bold;
+    color: #333;
+}
+
+.formGroup input {
+    padding: var(--padding-large);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius-small);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+    box-shadow: inset 0 0 0 2px var(--accent-green);
+    border-radius: var(--border-radius-large);
+    outline: none;
+}
+
+#userType {
+    background: var(--background-primary);
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    transition: all 0.3s ease;
+}
+
+.submitBtn {
+    margin-top: var(--gap-large);
+    padding: var(--padding-large);
+    background: #34c759;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius-medium);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+    background: #2fa347;
+}

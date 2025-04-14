@@ -1,0 +1,126 @@
+:root {
+  --background-primary: #F2F2F7; 
+  --background-secondary: #ffffff; 
+  --background-tertiary: #F2F2F7; 
+
+  --white: #FFFFFF;
+
+  --accent-green: #34c759;
+  --accent-green-dark: #25b148;
+  --accent-blue: #007bff;
+
+  --border-radius-xl: 24px; 
+  --border-radius-large: 16px; 
+  --border-radius-medium: 12px;
+  --border-radius-small: 8px;
+  --border-radius-xs: 4px;
+
+  --padding-large: 16px;
+  --padding-medium: 8px;
+  --padding-small: 4px;
+
+  --gap-xl: 48px;
+  --gap-large: 16px;
+  --gap-medium: 8px;
+  --gap-small: 4px;
+
+  --thumbnail: 200px;
+  --item-card-width: 200px;
+  --item-card-height: 400px;
+  --item-card-list-height: 100px;
+}
+
+#root {
+  min-height: 100vh;
+  /* padding-bottom: 128px; */
+
+  background: var(--background-primary);
+  /* background: linear-gradient(var(--background-primary), var(--accent-green)); */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 1920px;
+
+  flex-grow: 1;
+}
+
+::selection {
+  color: white;
+  background: var(--accent-green);
+}
+
+/* PAGE BODY */
+
+main {
+  padding: 32px clamp(16px, 5%, 128px);
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: var(--gap-xl);
+}
+
+/* LOGIN PAGE */
+
+#loginPage {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: var(--gap-large);
+  padding: 148px;
+  
+  background-image: url('/src/assets/authBackground.png');
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+
+
+/* SHOPPING CART */
+
+.shoppingCart {
+  min-width: 300px;
+}
+
+.cartItemsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cartItem {
+  padding: 8px 8px 8px 16px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addToCartBtn:hover {
+  background: var(--accent-green);
+  color: #FFFFFF;
+  transition: 0.25s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background: #FF3B30;
+  color: #FFFFFF;
+  transition: 0.25s ease-in-out;
+}
+
+fieldset {
+  border: none;
+}

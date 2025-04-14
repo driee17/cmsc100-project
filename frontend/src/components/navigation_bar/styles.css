@@ -1,0 +1,38 @@
+/* HEADER/NAVIGATION BAR */
+header {
+    padding: var(--padding-large);
+    position: sticky;
+    top: 0;
+
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+nav {
+    padding: 8px;
+    
+    background: var(--white);
+    border-radius: var(--border-radius-large);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navMenuButtonsGroup {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-medium);
+}
+
+#navLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navAccount {
+    background: var(--accent-green);
+    color: white;
+}
